@@ -171,6 +171,7 @@ body {
 #layerTwo {
     align-items: center;
     visibility: hidden;
+    opacity: 0;
 
     transition-duration: 300ms;
 }
