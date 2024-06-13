@@ -88,3 +88,6 @@ hi.addEventListener("click", () => {
         layerTwo.style.opacity = "0";
         layerTwo.style.visibility = "hidden"
 })
+
+layerTwo.style.opacity = "0";
+layerTwo.style.visibility = "hidden"
