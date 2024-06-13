@@ -2,6 +2,8 @@ body {
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     font-style: normal;
+    padding: 0;
+    margin: 0;
 
     overflow-x: hidden;
 }
@@ -54,13 +56,11 @@ body {
 }
 
 #container {
-    position: relative;
-    
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
-#container:hover {
-
-}
 
 #material-symbols-outlined {
     height: 70px;
@@ -122,4 +122,55 @@ body {
     align-items: center;
     color: rgb(213, 213, 213);
     font-size: 30px;
+}
+
+#layerOne {
+    position: absolute;
+}
+
+#layerTwo {
+    transition-duration: 300ms;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 244, 244);
+    width: 400px;
+    height: 500px;
+    border-radius: 25px;
+    box-shadow: #1d1d1f 1px;
+
+}
+
+#layerOne {
+    width: 100%;
+    height: 100%;
+}
+
+#close {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    margin-left: 330px;
+    bottom: 215px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#layerTwo {
+    align-items: center;
+    visibility: hidden;
+
+    transition-duration: 300ms;
 }

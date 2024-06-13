@@ -3,6 +3,7 @@ const container = document.getElementById("container");
 const slide = document.getElementById("material-symbols-outlined")
 const svg = document.getElementById("svg");
 const left = document.getElementById("left");
+const layerTwo = document.getElementById("layerTwo")
 
 let margin = 0;
 let topBanner = 0;
@@ -68,4 +69,22 @@ container.addEventListener("mouseleave", () => {
 
     left.style.visibility = "hidden"
     left.style.opacity = "0"
+})
+
+
+for (let i = 0;i < 9;i++) {
+
+    let recent = banner.children[i]
+    recent.addEventListener("click",() => {
+        layerTwo.style.opacity = "1";
+        layerTwo.style.visibility = "visible"
+    })
+}
+
+const clost = document.getElementById("close");
+const hi = document.getElementById("hi");
+
+hi.addEventListener("click", () => {
+        layerTwo.style.opacity = "0";
+        layerTwo.style.visibility = "hidden"
 })
